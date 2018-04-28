@@ -1,0 +1,70 @@
+@import url(//fonts.googleapis.com/css?family=Merriweather+Sans);
+
+* {
+    background: #9fff3f;
+}
+
+#myCanvas {
+   border: solid 1px black;
+   background: peachpuff;
+}
+
+button {
+    color: white;
+    background: black;
+    padding: 10px 30px 10px 30px;
+    margin: 20px;
+    border: 3px white solid;
+    font-size: 18px;
+    font-style: bold;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    background: red;
+}
+
+button:hover {
+    color: black;
+    background: white;
+    border-color: black;
+}
+
+input[type=range]{
+    -webkit-appearance: none;
+    background: transparent;
+    width: 20%;
+    margin-bottom: 20px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  height: 5px;
+  width: 90%;
+  background: black;
+  cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 22px;
+  width: 22px;
+  background-color: black;
+  border: 3px solid black;
+  margin-top: -9px;
+  border-radius: 50%;
+  transition: .1s ease-in-out;
+}
+input[type=range]::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: black;
+}
